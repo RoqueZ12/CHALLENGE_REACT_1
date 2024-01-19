@@ -1,0 +1,117 @@
+/* Estilos para las tarjetas de productos */
+.card {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la imagen y etiquetas de la tarjeta */
+.card-tag-img {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  position: relative;
+}
+
+.card-tag-img img {
+  border-radius: 10px;
+}
+
+/* Estilos para la etiqueta "Popular" en productos populares */
+.texto-popular {
+  position: absolute;
+  margin: 0.6rem;
+  text-align: center;
+  color: #111315;
+  background-color: #F6C768;
+  padding: 0.3rem 1rem;
+  font-size: 0.625rem;
+  font-weight: bold;
+  border-radius: 1rem;
+}
+
+/* Estilos para los detalles de la tarjeta */
+.card-details {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.1rem;
+}
+
+.card-details p {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #FEF7EE;
+}
+
+/* Estilos para el precio en la tarjeta */
+.card-price {
+  background-color: #BEE3CC;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+}
+
+.card-price p {
+  margin: 0;
+  color: #000;
+  font-size: 0.75rem;
+}
+
+/* Estilos para la sección de votos y disponibilidad */
+.card-votes {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos para la etiqueta "Sold out" en productos no disponibles */
+.card-sold p {
+  color: #ED735D;
+  font-size: 0.875rem;
+  margin-top: 4px;
+}
+
+.card-votes-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Estilos para las imágenes de votos en la tarjeta */
+.card-votes img {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 4px;
+}
+
+/* Estilos para el texto de votos y disponibilidad en la tarjeta */
+.card-votes p {
+  margin: 0.5rem 0.1rem;
+  font-size: 0.8em;
+  color: #FEF7EE;
+}
+.container-api{
+  margin: auto 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+/* Cambios de diseño en dispositivos con una anchura máxima de 1024px */
+@media (max-width: 1024px) {
+  .container-api {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Cambios de diseño en dispositivos con una anchura máxima de 640px */
+@media (max-width: 640px) {
+  .container-api {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+  }
+}
